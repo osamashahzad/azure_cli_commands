@@ -1,0 +1,1 @@
+az acr run --registry <container-registry-name>   --cmd "acr purge --filter '<repo-name>:.*' --ago 0d --keep 3 --untagged"   /dev/null (This command deletes the images inside of an acr repo except for the latest three.)
